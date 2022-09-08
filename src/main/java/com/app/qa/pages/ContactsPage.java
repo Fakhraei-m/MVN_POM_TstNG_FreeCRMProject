@@ -18,10 +18,10 @@ public class ContactsPage extends TestBase{
 	@FindBy(xpath = "//td[contains(text(),'Contacts')]")
 	WebElement ContactsLabel;
 	
-	@FindBy(xpath = "//input[@name='first_name111']")
+	@FindBy(xpath = "//input[@name='first_name']")
 	WebElement NewContact_FirstNameField;
 	
-	@FindBy(id = "surname")
+	@FindBy(id = "surname111")
 	WebElement NewContact_LastNameField;
 	
 	@FindBy(name = "client_lookup")

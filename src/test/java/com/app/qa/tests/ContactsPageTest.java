@@ -62,14 +62,14 @@ public class ContactsPageTest extends TestBase{
 		return data;
 	}
 	
-	@Test(dataProvider="GetTestData")
+	@Test(enabled = false, dataProvider="GetTestData")
 	public void CreateNewContactTest(String title, String firstName, String lastName, String company) {
 		_contactsPage = _homePage.ClickOnCreateNewContactLink();
 		
 		_contactsPage.CreateNewContact(title, firstName, lastName, company);
 	}
 	
-	@Test(enabled = false) 
+	@Test//(retryAnalyzer = com.app.qa.util.MyRetryAnalyzer.class) 
 	public void CreateNewContactTest_HardCodedData() {
 		_contactsPage = _homePage.ClickOnCreateNewContactLink();
 		

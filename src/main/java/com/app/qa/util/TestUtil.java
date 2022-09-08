@@ -16,8 +16,8 @@ import com.app.qa.base.TestBase;
 
 public class TestUtil extends TestBase{
 	
-	public static long PAGE_LOAD_TIMEOUT = 40;
-	public static long IMPLICIT_WAIT = 20;
+	public static long PAGE_LOAD_TIMEOUT = 30;
+	public static long IMPLICIT_WAIT = 10;
 	
 	public static String TESTDATA_SHEET_PATH = "D:\\Users\\samsung\\Desktop\\SQA\\Projects\\EclipseWorkSpace\\"
 								+"MVN_POM_TstNG\\src\\main\\java\\com\\app\\qa\\testdata\\FreeCRM_TestData.xlsx";

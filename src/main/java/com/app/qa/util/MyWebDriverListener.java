@@ -66,7 +66,7 @@ public class MyWebDriverListener extends TestBase implements WebDriverListener {
         } catch (IOException exp) {
         	exp.printStackTrace();
         }   	
-    	throw new RuntimeException("listener");
+    	//throw new RuntimeException("listener");
     }
 
 }

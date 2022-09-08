@@ -3,13 +3,14 @@
 <suite name="Failed suite [FreeCRM App Test Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.app.qa.extentReportListener.ExtentReportListener"/>
+    <listener class-name="com.app.qa.util.MyAnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="FreeCRM App Test Cases(failed)">
     <classes>
       <class name="com.app.qa.tests.ContactsPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="CreateNewContactTest" invocation-numbers="0"/>
+          <include name="CreateNewContactTest_HardCodedData"/>
           <include name="SetUp"/>
         </methods>
       </class> <!-- com.app.qa.tests.ContactsPageTest -->

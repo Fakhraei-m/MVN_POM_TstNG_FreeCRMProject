@@ -5,6 +5,8 @@
   <listeners>
   		<listener
   			class-name="com.app.qa.extentReportListener.ExtentReportListener" />
+  		<listener
+  			class-name="com.app.qa.util.MyAnnotationTransformer" /> 
   </listeners>
   <test name="FreeCRM App Test Cases">
       <classes>
