@@ -7,7 +7,6 @@
   <groupId>MVN_POM_TstNG_FrmWrk</groupId>
   <artifactId>MVN_POM_TstNG</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
 <!--
   <name>MVN_POM_TstNG</name>
   <properties>
