@@ -7,14 +7,15 @@
   <groupId>MVN_POM_TstNG_FrmWrk</groupId>
   <artifactId>MVN_POM_TstNG</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<!--
+
   <name>MVN_POM_TstNG</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+<!--    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target> 
+    <aspectj.version>1.9.9.1</aspectj.version> -->
   </properties>
--->
+
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
  	<dependency>
@@ -71,6 +72,12 @@
 	    <artifactId>slf4j-api</artifactId>
 	    <version>2.0.0</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+				<dependency>
+				    <groupId>io.qameta.allure</groupId>
+				    <artifactId>allure-testng</artifactId>
+				    <version>2.19.0</version>
+				</dependency>
   </dependencies>
 
   <build>
@@ -99,9 +106,13 @@
           <version>2.22.1</version>
 	          <configuration>
 	            <suiteXmlFiles>
-	            	<suiteXmlFile>${MySuiteXmlFiles}</suiteXmlFile>
+	            	<suiteXmlFile>src/main/resources/testng_Sanity.xml</suiteXmlFile><!-- For Jenkins: ${MySuiteXmlFiles} -->
 				</suiteXmlFiles>
+				<!--<argLine>
+					-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+				</argLine> -->
 	        </configuration>
+	        
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

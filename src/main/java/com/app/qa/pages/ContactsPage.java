@@ -21,7 +21,7 @@ public class ContactsPage extends TestBase{
 	@FindBy(xpath = "//input[@name='first_name']")
 	WebElement NewContact_FirstNameField;
 	
-	@FindBy(id = "surname111")
+	@FindBy(id = "surname")
 	WebElement NewContact_LastNameField;
 	
 	@FindBy(name = "client_lookup")

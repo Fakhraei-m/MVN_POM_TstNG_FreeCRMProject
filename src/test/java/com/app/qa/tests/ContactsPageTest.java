@@ -14,6 +14,14 @@ import com.app.qa.pages.HomePage;
 import com.app.qa.pages.LoginPage;
 import com.app.qa.util.TestUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
+
 public class ContactsPageTest extends TestBase{
 
 	LoginPage _loginPage;
@@ -42,7 +50,13 @@ public class ContactsPageTest extends TestBase{
 		driver.quit();
 	}
 	
-	@Test(enabled = false) 
+	@Test(priority=1, description="Verifying Contacts Label exists")//(enabled = false) //TestNG Annotation
+	@Severity(SeverityLevel.NORMAL) //Allure Annotation
+	@Description("Test Case Description: Verifying Contacts Label exists in Contacts Page") //Allure Annotation
+	@Epic("EP001") //Allure Annotation
+	@Feature("Feature1: Contact Page Label") //Allure Annotation
+	@Story("Story: Label Presence") //Allure Annotation
+	@Step("Verifying Contacts Label exists in Contacts Page") //Allure Annotation
 	public void VerifyContactsLabelTest() {
 		_contactsPage = _homePage.ClickOnContactsLink();
 		_contactsPage.VerifyContactsLabel();
