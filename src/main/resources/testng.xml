@@ -11,8 +11,8 @@
   <test name="FreeCRM App Test Cases">
       <classes>
       	<class name="com.app.qa.tests.LoginPageTest"/>
-      	<!--<class name="com.app.qa.tests.HomePageTest"/>
-      	<class name="com.app.qa.tests.ContactsPageTest"/> -->
+      	<class name="com.app.qa.tests.HomePageTest"/>
+      	<class name="com.app.qa.tests.ContactsPageTest"/>
       </classes>
   </test> <!-- Test --> 
 </suite> <!-- Suite -->
